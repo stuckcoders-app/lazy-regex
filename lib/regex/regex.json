@@ -1,4 +1,4 @@
 {
-	"zeroOrMore": "*" 
-  "oneOrMore" : "+"
+	"zeroOrMore": "*",
+    "oneOrMore" : "+"
 }
