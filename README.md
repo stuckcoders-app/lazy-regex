@@ -9,13 +9,15 @@ A small library providing regular expressions in simple English
 ## Usage
 
   ```javascript
-  const LazyRegex = require("../index.js");
+  const LazyRegex = require("lazy-regex");
   const LazyRegexp = LazyRegex();
 
-  var params = 'Hello World',
-      log = LazyRegexp.log(params),
+  const params = 'Hello World';
+  const sample = LazyRegexp
+	  				.log(params)
+					.compile();
 
-  console.log();
+  console.log(sample);
   ```
 
 ## Tests
