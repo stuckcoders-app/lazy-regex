@@ -7,4 +7,9 @@
 
 const LazyRegex = require("../index.js");
 
-console.log(LazyRegex().log("Hello World"));
+console.log(
+	LazyRegex()
+		.log("Hello World")
+		.log(" from Nigeria")
+		.compile()
+);
