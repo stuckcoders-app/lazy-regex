@@ -3,10 +3,15 @@
 const chai  = require('chai');
 const should = chai.should();
 const LazyRegex = require("../index.js");
-const LazyRegexp = LazyRegex();
+const Log = LazyRegex();
+const ZeroOrMore = LazyRegex();
 
-describe('#escape', function() {
+describe('#LazyRegex', function() {
   it('return Hello World', function() {
-    LazyRegexp.log('Hello World').should.equal('Hello World');
+    Log.log('Hello World').compile().should.equal('Hello World');
+  });
+  
+  it('return b*', function() {
+    ZeroOrMore.zeroOrMore('b').compile().should.equal('b*');
   });
 });
