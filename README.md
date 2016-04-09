@@ -9,7 +9,7 @@ A small library providing regular expressions in simple English
 ## Usage
 
   ```javascript
-  const LazyRegex = require("../index.js");
+  const LazyRegex = require("lazy-regex");
   const LazyRegexp = LazyRegex();
 
   var params = 'Hello World',
